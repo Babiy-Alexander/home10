@@ -1,0 +1,50 @@
+header {
+  background: $red;
+  padding: 0 10px;
+;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-left {
+  display: flex;
+
+  a {
+    color: $text-white;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+
+    .fab {
+      font-size: 24px;
+      color: $text-white;
+    }
+
+    .icon-text {
+      padding-left: 10px;
+      color: $text-white;
+      font-size: 14px;
+      font-family: "Droid Sans", sans-serif;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+}
+
+li {
+  padding: 0 20px;
+}
