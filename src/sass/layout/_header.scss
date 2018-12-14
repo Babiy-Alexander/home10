@@ -12,6 +12,7 @@ nav {
 
 .menu-left {
   display: flex;
+  list-style: none;
 
   a {
     color: $text-color;
@@ -22,6 +23,7 @@ nav {
 
     &:hover {
       color: rebeccapurple;
+      transition: .3s all;
     }
   }
 }
@@ -29,6 +31,7 @@ nav {
 .menu-social-network {
   display: flex;
   align-items: center;
+  list-style: none;
 
   a {
     display: flex;

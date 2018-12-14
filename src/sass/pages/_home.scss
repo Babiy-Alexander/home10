@@ -3,7 +3,6 @@
 .slider {
   background: url('../img/slider-bg.png') center center no-repeat;
   height: 700px;
-  //background-size: cover;
   display: flex;
   align-items: center;
 
@@ -41,6 +40,7 @@
 .participants-list {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .participants {
@@ -79,4 +79,159 @@
   background: red;
   width: 100%;
   padding: 15px 30px 5px;
+}
+
+//.........................................
+
+.event-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.event-box::before {
+  content: " ";
+  height: 1px;
+  display: block;
+  width: 100%;
+  background: #dfdfdf;
+  margin: 1px 0 100px;
+}
+
+.event-desc {
+  display: flex;
+  margin-top: 40px;
+  position: relative;
+
+  .date-consert {
+    margin-left: 75px;
+  }
+
+  .consert-list {
+    padding: 0;
+    margin-bottom: 30px;
+    list-style: none;
+  }
+
+  .consert-item {
+    padding: 0;
+  }
+
+  .btn-nav-left {
+    position: absolute;
+    right: 35px;
+    top: -45px;
+    width: 35px;
+    height: 35px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .btn-nav-right {
+    position: absolute;
+    right: 0;
+    top: -45px;
+    width: 35px;
+    height: 35px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-right {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    transform: rotate(45deg);
+  }
+
+  .arrow-left {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+  }
+}
+
+//............................................
+
+.our-founder-bg {
+  background: url('../img/our-founder-bg.png');
+  padding: 80px 100px;
+  margin-top: 100px;
+}
+
+.our-founder-box{
+  max-width: 560px;
+}
+
+.our-founder-heading {
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.our-founder-subtitle {
+  display: inline-block;
+  color: #ffffff;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.text-italic {
+  color: #ffffff;
+  font-family: 'Great Vibes', sans-serif ;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+//............................................
+
+.songs-instagram-box {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .popular-sonds-heading {
+    margin-bottom: 35px;
+  }
+
+  .popular-sonds-list {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-type:decimal-leading-zero;
+  }
+
+  .songs-item {
+    padding: 0;
+    color: #333333;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+
+  .rr {
+    border-bottom: 1px solid #999999;
+
+  }
 }
