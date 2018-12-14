@@ -1,5 +1,5 @@
 .menu-button {
-  background-color: #ffffff;
+  background: #ffffff;
   padding: 10px 45px;
   border-radius: 25px;
   color: #df001f;
@@ -8,5 +8,24 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  
+  &:hover {
+    background: #e8e8e8;
+  }
 }
 
+.slider-btn {
+  color: #ffffff;
+  background: #df001f;
+  padding: 10px 50px;
+  border-radius: 25px;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #c9183e;
+  }
+}

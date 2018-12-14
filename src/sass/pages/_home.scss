@@ -1,0 +1,82 @@
+
+//............................................
+.slider {
+  background: url('../img/slider-bg.png') center center no-repeat;
+  height: 700px;
+  //background-size: cover;
+  display: flex;
+  align-items: center;
+
+  .slider-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    color: #df001f;
+    font-family: "Oswald - Heavy", sans-serif;
+    font-size: 116px;
+    font-weight: 400;
+    line-height: 85.6px;
+    text-transform: uppercase;
+  }
+
+  .slider-text {
+    color: #333333;
+    font-family: "Great Vibes", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 90px;
+  }
+}
+
+
+//......................................
+
+.participants-heading {
+  margin: 100px 0 45px;
+}
+
+.participants-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.participants {
+  width: 370px;
+  height: 466px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.participants-name {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.participants-activities {
+  color: #ffffff;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+}
+
+.jone {
+  background: url('../img/Jone smith.png') no-repeat;
+}
+.rendi {
+  background: url('../img/Rendi Outhor.png') no-repeat;
+}
+.renes {
+  background: url('../img/Renes Odim.png') no-repeat;
+}
+
+.participants-desc {
+  background: red;
+  width: 100%;
+  padding: 15px 30px 5px;
+}

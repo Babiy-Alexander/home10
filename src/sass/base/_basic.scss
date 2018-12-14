@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -7,6 +11,30 @@
 h1 {
   margin: 10px 0;
 }
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  color: #333333;
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+}
+
+.subtitle {
+  color: #df001f;
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -14,3 +42,5 @@ a {
 li {
   list-style: none;
 }
+
+

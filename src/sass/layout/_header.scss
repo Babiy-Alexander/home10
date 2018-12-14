@@ -1,27 +1,32 @@
 header {
-  background: $red;
+  background: $bg-color;
   padding: 0 10px;
-;
 }
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .menu-left {
   display: flex;
 
   a {
-    color: $text-white;
+    color: $text-color;
     font-family: "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 700;
     line-height: 44px;
+
+    &:hover {
+      color: rebeccapurple;
+    }
   }
 }
 
-.menu-right {
+.menu-social-network {
   display: flex;
   align-items: center;
 
@@ -31,12 +36,12 @@ nav {
 
     .fab {
       font-size: 24px;
-      color: $text-white;
+      color: $text-color;
     }
 
     .icon-text {
       padding-left: 10px;
-      color: $text-white;
+      color: $text-color;
       font-size: 14px;
       font-family: "Droid Sans", sans-serif;
       font-weight: 400;
