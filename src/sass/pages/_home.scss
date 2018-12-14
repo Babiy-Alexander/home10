@@ -41,6 +41,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 
 .participants {
@@ -228,10 +229,89 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 40px;
+    border-bottom: 1px solid #999999;
   }
 
-  .rr {
-    border-bottom: 1px solid #999999;
+  .instagram-feed {
+    margin-left: 30px;
 
+    .instagram-feed-heading {
+      margin-bottom: 35px;
+    }
+
+    .photo1, .photo2 {
+      margin: 0 0 30px;
+    }
+
+    .photo1, .photo3 {
+      margin-right: 30px;
+    }
+  }
+}
+
+
+//....................................
+
+.our-official-apps-bg {
+  background: url('../img/our-official-apps-bg.png') center no-repeat;
+  padding: 80px;
+
+  .our-official-apps-heading {
+    text-align: center;
+
+    h3 {
+      color: #ffffff;
+
+    }
+
+    .our-official-apps-subtitle {
+      color: #ffffff;
+      font-family: 'Droid Sans', sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+
+  .nav-btn {
+    margin-top: 40px;
+    text-align: center;
+
+    a {
+      display: inline-block;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+//..........................................
+
+.newsletter {
+  border-bottom: 1px solid #d2d2d2;
+
+  .subscribe-newsletter {
+    padding: 60px;
+    text-align: center;
+
+    .newsletter-form {
+      max-width: 530px;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid #999999;
+      padding: 10px 0;
+
+      &::placeholder {
+        color: #282828;
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.88px;
+        letter-spacing: 3.2px;
+      }
+    }
   }
 }
