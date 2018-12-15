@@ -14,7 +14,7 @@
 
   h2 {
     color: #df001f;
-    font-family: "Oswald - Heavy", sans-serif;
+    font-family: $title-font;
     font-size: 116px;
     font-weight: 400;
     line-height: 85.6px;
@@ -23,18 +23,17 @@
 
   .slider-text {
     color: #333333;
-    font-family: "Great Vibes", sans-serif;
+    font-family: $italic-font;
     font-size: 80px;
     font-weight: 400;
-    margin-bottom: 90px;
+    margin: 20px 0 90px;
   }
 }
-
 
 //......................................INTRODUCING
 
 .participants-heading {
-  margin: 100px 0 45px;
+  margin-top: 100px;
 }
 
 .participants-list {
@@ -45,6 +44,7 @@
 }
 
 .participants {
+  margin-top: 35px;
   max-width: 370px;
   width: 100%;
   height: 466px;
@@ -55,7 +55,7 @@
 .participants-name {
   margin: 0;
   color: #ffffff;
-  font-family: 'Oswald', sans-serif;
+  font-family: $title-font;
   font-size: 22px;
   font-weight: 400;
   line-height: 20px;
@@ -63,7 +63,7 @@
 
 .participants-activities {
   color: #ffffff;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: $main-font;
   font-size: 16px;
 }
 
@@ -112,7 +112,7 @@
   .date-consert-heading {
     margin: 15px 0 20px;
     color: #333333;
-    font-family: 'Oswald', sans-serif;
+    font-family: $title-font;
     font-size: 22px;
     font-weight: 500;
     line-height: 30px;
@@ -127,7 +127,7 @@
   .consert-item {
     padding: 0;
     color: #333333;
-    font-family: 'Droid Sans', sans-serif;
+    font-family: $main-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -192,7 +192,7 @@
 
 .our-founder-heading {
   color: #ffffff;
-  font-family: 'Oswald', sans-serif;
+  font-family: $title-font;
   font-size: 32px;
   font-weight: 500;
   line-height: 20px;
@@ -203,7 +203,7 @@
 .our-founder-subtitle {
   display: inline-block;
   color: #ffffff;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: $main-font;
   font-size: 22px;
   font-weight: 400;
   line-height: 1.5;
@@ -211,19 +211,19 @@
 
 .text-italic {
   color: #ffffff;
-  font-family: 'Great Vibes', sans-serif ;
+  font-family: $italic-font;
   font-size: 65px;
   font-weight: 400;
   line-height: 30px;
 }
 
-
 //............................................SONGS-INSTAGRAM
+
 
 .songs-instagram-box {
   padding: 80px 0;
   display: flex;
-  justify-content: space-between;
+
 
   .popular-sonds-heading {
     margin-bottom: 35px;
@@ -240,29 +240,22 @@
   .songs-item {
     padding: 0;
     color: #333333;
-    font-family: 'Droid Sans', sans-serif;
+    font-family: $main-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 40px;
     border-bottom: 1px solid #999999;
   }
 
-  .instagram-feed {
-    margin-left: 30px;
-
     .instagram-feed-heading {
       margin-bottom: 35px;
     }
 
-    .photo1, .photo2 {
-      margin: 0 0 30px;
+    .photo {
+      margin: 0 0 30px 30px;
     }
 
-    .photo1, .photo3 {
-      margin-right: 30px;
-    }
   }
-}
 
 
 //....................................OUR-OFFICIAL-APPS
@@ -281,7 +274,7 @@
 
     .our-official-apps-subtitle {
       color: #ffffff;
-      font-family: 'Droid Sans', sans-serif;
+      font-family: $main-font;
       font-size: 22px;
       font-weight: 400;
       line-height: 30px;
@@ -321,7 +314,7 @@
 
       &::placeholder {
         color: #282828;
-        font-family: 'Droid Sans', sans-serif;
+        font-family: $main-font;
         font-size: 16px;
         font-weight: 400;
         line-height: 24.88px;
@@ -330,3 +323,5 @@
     }
   }
 }
+
+

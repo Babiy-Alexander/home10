@@ -16,7 +16,7 @@ nav {
 
   a {
     color: $text-color;
-    font-family: "Droid Sans", sans-serif;
+    font-family: $main-font;
     font-size: 13px;
     font-weight: 700;
     line-height: 44px;
@@ -50,7 +50,7 @@ nav {
       padding-left: 10px;
       color: $text-color;
       font-size: 14px;
-      font-family: "Droid Sans", sans-serif;
+      font-family: $main-font;
       font-weight: 400;
       line-height: 30px;
     }
