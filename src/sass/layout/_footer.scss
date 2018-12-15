@@ -1,0 +1,39 @@
+.footer-menu {
+  display: flex;
+  list-style: none;
+
+  a {
+    color: #333333;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 44px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #df001f;
+      transition: 0.5s;
+    }
+  }
+}
+
+.footer-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px 0 85px;
+
+  .footer-text {
+    color: #333333;
+    font-family: 'Droid San', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    .footer-text-italic {
+      color: #df001f;
+      font-family: 'Great Vibes', sans-serif;
+      font-size: 28px;
+      letter-spacing: 1.4px;
+    }
+  }
+}
