@@ -21,12 +21,24 @@
     text-transform: uppercase;
   }
 
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 75px;
+    }
+  }
+
   .slider-text {
     color: #333333;
     font-family: $italic-font;
     font-size: 80px;
     font-weight: 400;
     margin: 20px 0 90px;
+  }
+
+  @media (max-width: 500px) {
+    .slider-text {
+      font-size: 55px;
+    }
   }
 }
 
@@ -41,6 +53,10 @@
   justify-content: space-between;
   margin-bottom: 100px;
   flex-wrap: wrap;
+
+  img {
+    width: 100%;
+  }
 }
 
 .participants {
@@ -50,6 +66,7 @@
   height: 466px;
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
 
 .participants-name {
@@ -67,20 +84,22 @@
   font-size: 16px;
 }
 
-.jone {
-  background: url('../img/Jone smith.png') no-repeat;
-}
-.rendi {
-  background: url('../img/Rendi Outhor.png') no-repeat;
-}
-.renes {
-  background: url('../img/Renes Odim.png') no-repeat;
-}
-
 .participants-desc {
   background: red;
   width: 100%;
-  padding: 15px 30px 5px;
+  padding: 15px 30px;
+  position: absolute;
+
+  .menu-social-network {
+    display: none;
+  }
+}
+
+.participants:hover {
+
+  .menu-social-network {
+    display: flex;
+  }
 }
 
 //.........................................EVENT
@@ -178,6 +197,16 @@
   }
 }
 
+@media (max-width: 480px) {
+  .event-desc {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
 //............................................OUR-FOUNDER
 
 .our-founder-bg {
@@ -224,17 +253,30 @@
   padding: 80px 0;
   display: flex;
 
-
   .popular-sonds-heading {
     margin-bottom: 35px;
   }
 
+    @media (max-width:800px) {
+    .player {
+      width: 100%;
+    }
+  }
+
   .popular-sonds-list {
-    height: 170px;
-    display: flex;
+    height: auto;
+    display: block;
+    column-count: 3;
     flex-direction: column;
     flex-wrap: wrap;
     list-style-type:decimal-leading-zero;
+    list-style-position: inside;
+  }
+
+  @media (max-width:480px) {
+    .popular-sonds-list {
+      column-count: 1;
+    }
   }
 
   .songs-item {
@@ -245,18 +287,29 @@
     font-weight: 400;
     line-height: 40px;
     border-bottom: 1px solid #999999;
-  }
+    }
+
 
     .instagram-feed-heading {
       margin-bottom: 35px;
     }
 
+  @media (max-width: 480px) {
+    .instagram-feed-heading {
+      text-align: center;
+    }
+  }
+
     .photo {
       margin: 0 0 30px 30px;
     }
-
   }
 
+@media (max-width: 1200px) {
+  .songs-instagram-box {
+    display: block;
+  }
+}
 
 //....................................OUR-OFFICIAL-APPS
 
@@ -279,6 +332,18 @@
       font-weight: 400;
       line-height: 30px;
     }
+
+    @media (max-width: 480px) {
+      h3 {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .our-official-apps-subtitle {
+        font-size: 17px;
+      }
+    }
   }
 
   .nav-btn {
@@ -295,7 +360,6 @@
   }
 }
 
-
 //..........................................NEWSLETTER
 
 .newsletter {
@@ -311,6 +375,7 @@
       border: none;
       border-bottom: 2px solid #999999;
       padding: 10px 0;
+      outline: none;
 
       &::placeholder {
         color: #282828;
@@ -321,7 +386,19 @@
         letter-spacing: 3.2px;
       }
     }
+
+    @media (max-width: 480px) {
+      .newsletter-form {
+        width: 90%;
+
+        &::placeholder {
+          font-size: 12px;
+
+        }
+      }
+    }
   }
 }
+
 
 

@@ -17,6 +17,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .footer-menu {
+    display: block;
+  }
+}
+
 .footer-box {
   display: flex;
   align-items: center;
@@ -35,5 +41,11 @@
       font-size: 28px;
       letter-spacing: 1.4px;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-text {
+    text-align: center;
   }
 }

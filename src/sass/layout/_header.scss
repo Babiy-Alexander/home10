@@ -14,6 +14,12 @@ nav {
   display: flex;
   list-style: none;
 
+  @media (max-width: 320px) {
+    .menu-left {
+      display: block;
+    }
+  }
+
   a {
     color: $text-color;
     font-family: $main-font;
@@ -27,6 +33,12 @@ nav {
       color: #5e37fc;
       transition: .5s all;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-left {
+    display: block;
   }
 }
 
@@ -54,5 +66,11 @@ nav {
       font-weight: 400;
       line-height: 30px;
     }
+  }
+}
+
+@media  (max-width: 600px) {
+  .menu-social-network {
+    display: block;
   }
 }
