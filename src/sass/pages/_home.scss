@@ -224,7 +224,6 @@
   font-family: $title-font;
   font-size: 32px;
   font-weight: 500;
-  line-height: 20px;
   text-transform: uppercase;
   margin: 0 0 20px;
 }
@@ -246,6 +245,11 @@
   line-height: 30px;
 }
 
+@media (max-width: 768px) {
+  .our-founder-bg {
+    padding: 30px;
+  }
+}
 //............................................SONGS-INSTAGRAM
 
 
@@ -287,6 +291,10 @@
     font-weight: 400;
     line-height: 40px;
     border-bottom: 1px solid #999999;
+
+      a {
+        color: #333333;
+      }
     }
 
 
@@ -298,6 +306,13 @@
     .instagram-feed-heading {
       text-align: center;
     }
+    .instagram-feed {
+      text-align: center;
+
+        .photo {
+          margin: 20px 0;
+        }
+    }
   }
 
     .photo {
@@ -308,6 +323,7 @@
 @media (max-width: 1200px) {
   .songs-instagram-box {
     display: block;
+    padding: 0;
   }
 }
 
@@ -357,6 +373,12 @@
     img {
       margin-right: 10px;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .our-official-apps-bg {
+    padding: 10px;
   }
 }
 
